@@ -65,6 +65,9 @@
             width: 100%;
             height: 8%;
             background-color: blue;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
         }
         .popimg{
             
@@ -82,6 +85,7 @@
         }
         .animation{
             animation: downimage 2s ease-out forwards;
+            
         }
         @keyframes downimage {
             from{
@@ -140,7 +144,9 @@
             </aside>
         </section>
         <footer>
-
+            <div></div>
+            <div><img src="sample/github1.png" style="height: 5em; width: 5em;"></div>
+            <div><img src="sample/gpt.png" style="height: 4em; width: 4em;"></div>
         </footer>
     </div>
     
@@ -170,6 +176,7 @@
             if($firstcheck.querySelector('input[type="checkbox"]').checked){
                 $popimag.style.display="block";
                 $popimag.classList.add('animation');
+                
             }
         }
         const x_button =$popimag.firstElementChild;
