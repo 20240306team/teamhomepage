@@ -24,7 +24,7 @@ header{
 .home{
     width: 50%;
     height: 100%;
-
+    justify-self: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
