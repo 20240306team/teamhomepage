@@ -6,115 +6,10 @@
     <!-- 자신의 이름을 적어주세요 -->
     <title>leehojun</title>
     <style>
-        .outer{
-            height: 100vh;
-            width: 100vw;
-            
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-
-        }
-        header{
-            height: 11%;
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            
-            position: relative;
-            top: 5%;
-
-        }
-        .backspace{
-            height: 80px;
-            width: 80px;
-            
-        }
-        .searcharea{
-            height: 80%;
-            width: 500px;
-            
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        section{
-            width: 100%;
-            height: 80%;
-            
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-        nav{
-            height: 30%;
-            width: 20%;
-            
-        }
-        article{
-            height: 80%;
-            width: 50%;
-            
-        }
-        aside{
-            height: 80%;
-            width: 20%;
-            
-        }
-        footer{
-            width: 100%;
-            height: 8%;
-            
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
-        .popimg{
-            
-            z-index: 3;
-            position: absolute;
-            top : -100vh; 
-            
-
-        }
-        .popimg>button[type="button"]{
-            position: absolute;
-            top :5px;
-            left : 95%;
-            
-        }
-        .animation{
-            animation: downimage 2s ease-out forwards;
-            
-        }
-        @keyframes downimage {
-            from{
-                position: absolute;
-                top : -100vh;
-            }
-            to{
-                position: absolute;
-                top : 10vh;
-            }
-        }
         
-        .title{
-            font-family: "Playfair Display", serif;
-            font-weight: bold;
-            font-size: 50px;
-        }
-        .koreanfont{
-            font-family: 'Orbit', sans-serif;;
-        }
-        .reviewbox{
-            height: 80%;
-            width: 100%;
-            border: 1px dotted lightgrey;
-            border-radius: 3px;
-        }
     </style>
+    <!-- stylelink -->
+    <link rel="stylesheet" href="privatestyle.css">
 <!-- 폰트 -->
 <!-- orbit -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -139,7 +34,7 @@
             <div class="searcharea">
                 <form action="https://www.google.com/search" method="get" name="googlesearch">
                     <div class="input-group mb-3">
-                        <button class="btn btn-outline-dark" type="submit" id="button-addon1">Button</button>
+                        <button class="btn btn-outline-dark" type="submit" id="button-addon1" style="font-family: Playfair Display; font-weight: bold;">Button</button>
                         <input type="text" class="form-control" name="query" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
                     </div>    
                 </form>

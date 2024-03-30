@@ -53,7 +53,7 @@ $modal.addEventListener('show.bs.modal',e=>{
             $modalBody.innerHTML=`더이상 결석하면 장려금지급이 없습니다<br>남은 기간 전부 출석시 받을 장려금은 ${payment.toLocaleString()}원 입니다`
         }
         else{
-            $modalBody.textContent=`너무 많이 결석 했군요~~~ 이번달은 장려금을 받을 수 없습니다`;
+            $modalBody.innerHTML=`<img src="sample/nope.gif" style="height: 200px; width:200px;"><br>너무 많이 결석 했군요~~~ 이번달은 장려금을 받을 수 없습니다`;
         }
 
     };
