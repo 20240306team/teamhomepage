@@ -10,6 +10,7 @@
     </style>
     <!-- stylelink -->
     <link rel="stylesheet" href="privatestyle.css">
+    <link rel="stylesheet" href="leehojunstyle.css">
 <!-- 폰트 -->
 <!-- orbit -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,10 +46,12 @@
                 <button type="button" class="btn-close" aria-label="Close"></button>
                 <img src="sample/dd.jpg" style="height: 50em; width: 50em;">
             </div>
-            <nav class="privateimg"></nav>
+            <nav class="privateimg" id="media">
+                <iframe width="100%" height="100%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1802435407&color=%23181717&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ho-june-lee" title="Ho June Lee" target="_blank" style="color: #cccccc; text-decoration: none;">Ho June Lee</a> · <a href="https://soundcloud.com/ho-june-lee/sets/playlist" title="playlist" target="_blank" style="color: #cccccc; text-decoration: none;">playlist</a></div>
+            </nav>
             <article class="review">
                 <p class="title">Review</p>
-                <div class="reviewbox" style="font-family: orbit; padding: 5%;">
+                <div class="reviewbox overflow-auto" style="font-family: orbit; padding: 5%;">
                     
                     일단 목표로한 지급액 계산기 완성함.<br>
                     지급액 계산기는 예전 java 배울때 연습삼아 만들었던걸 그대로 사용한것임.<br>
@@ -60,7 +63,11 @@
                     부트스트랩의 modal 창의 경우 event 타입으로 show.bs.modal을 사용함<br>
                     다른 이벤트 타입도 있는데 자세한건 <br>
                     <a href="https://getbootstrap.kr/docs/5.3/components/modal/#%EC%9D%B4%EB%B2%A4%ED%8A%B8">bootstrap 이벤트</a>
-                    여기서 확인
+                    여기서 확인<br>
+                    아쉬운점은 서로 다른 html 간 상호작용을 해보고 싶었는데 쉽지 않았다<br>
+                    기존의 예상대로라면 script src 를 공유하고 form 을 통해서 한쪽 html 에서 받은 작성자의 value를 <br>
+                    다른 html 파일로 옮길 수 있을거라 예상했지만 되지 않음<br>
+                    gpt 상으로는 ajax를 사용하면 가능하다고 함<br> ajax를 배운다고 했으니 나중되면 할 수 있을듯
                     
                 </div>
             </article>
@@ -84,7 +91,7 @@
             </aside>
         </section>
         <footer>
-            <div></div>
+            <a href="https://www.notion.so/ohgiraffers/20240130_Hi_Media_Sinchon-dcfe4bdb1b5f4854be27eb5ac0ec292d"><div><img src="sample/notionpage.png" style="height: 5em; width: 5em;"></div></a>
             <a href="https://github.com/comaserious"><div><img src="sample/github1.png" style="height: 5em; width: 5em;"></div></a>  
             <a href="https://chat.openai.com/"><div><img src="sample/gpt.png" style="height: 4em; width: 4em;"></div></a>
             
