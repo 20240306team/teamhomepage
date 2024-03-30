@@ -48,7 +48,21 @@
             <nav class="privateimg"></nav>
             <article class="review">
                 <p class="title">Review</p>
-                <div class="reviewbox"></div>
+                <div class="reviewbox" style="font-family: orbit; padding: 5%;">
+                    
+                    일단 목표로한 지급액 계산기 완성함.<br>
+                    지급액 계산기는 예전 java 배울때 연습삼아 만들었던걸 그대로 사용한것임.<br>
+                    다만 javaScript 에서는 작성자의 값을 Scanner 나 BufferedReader 가 아닌 <br>
+                    진짜 웹사이트에서처럼 select 나 input 을 통해서 value를 받고 받은 value 를 통해서 코드를 작동하게<br>
+                    만들면 되는 작업이 실제 웹사이트 같아서 느낌이 좋음<br>
+                    다만 부트스트랩을 사용하다보니 event 발동 조건을 넣어주는게 까다로웠는데<br>
+                    다행이 modal의 경우 이벤트타입에 대한 방식이 있어서 적용할 수 있었음<br>
+                    부트스트랩의 modal 창의 경우 event 타입으로 show.bs.modal을 사용함<br>
+                    다른 이벤트 타입도 있는데 자세한건 <br>
+                    <a href="https://getbootstrap.kr/docs/5.3/components/modal/#%EC%9D%B4%EB%B2%A4%ED%8A%B8">bootstrap 이벤트</a>
+                    여기서 확인
+                    
+                </div>
             </article>
             <aside class="todo">
                 <p class="title" style="font-size: 50px;">ToDoList</p>
@@ -83,7 +97,7 @@
         const isTrue=window.confirm(`${$title.textContent}님의 페이지가 맞습니까?`)
 
         if(!isTrue){
-            location.replace('main.html')
+            location.replace('main.html');
         }
 
         const $google = document.forms.googlesearch;
