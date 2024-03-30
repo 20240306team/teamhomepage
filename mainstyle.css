@@ -1,0 +1,120 @@
+.outline{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+header{
+    width: 80%;
+    height: 10%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+}
+.main{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+}
+.home{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+aside{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+article{
+    height: 23%;
+    width: 90%;
+
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.teamname{
+    width: 90%;
+    height: 10%;
+    
+}
+.calculator{
+    width: 300px;
+    height: 70%;
+    
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: space-evenly;
+    border: 2px dashed lightgray;
+    
+}
+.link{
+    width: 90%;
+    height: 10%;
+    
+}
+.image{
+    height: 80%;
+    width: 35%;
+    background-color: aliceblue;
+}
+.word{
+    height: 80%;
+    width: 60%;
+    border: 1px dotted lightgray;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.button{
+    display: flex;
+    justify-content: end;
+}
+button{
+    position: relative;
+    
+}
+pre{
+    padding: auto;
+    
+}
+.contents{
+    font-family: "orbit";
+    font-size: 15px;
+    font-weight:bold;
+}
+#bb{
+    font-family: "Playfair Display";
+    font-weight: bold;
+}
+.link{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+#teamlink{
+    text-decoration: none;
+    color: inherit;
+}
+.englishfont{
+    font-family:  "Playfair Display";
+    font-weight: bold;
+}
